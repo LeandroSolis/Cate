@@ -1,0 +1,5 @@
+En Java, al emplear el operador de desplazamiento a la izquierda (<<), los bits de un número se desplazan hacia la izquierda y se completan con ceros a la derecha. Sin embargo, la conducta puede variar al intentar desplazar por una cantidad negativa o mayor a la longitud del número.
+
+En los casos que mencionaste:
+- `2 << -2 da como resultado -2147483648 porque el bit más significativo se desplaza fuera del rango de un entero de 32 bits y se interpreta como un valor negativo.
+- `12 << -2 da como resultado 0 porque todos los bits se desplazan fuera del rango de un entero de 32 bits y se descartan, resultando en 0.
